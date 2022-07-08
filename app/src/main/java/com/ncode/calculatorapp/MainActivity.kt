@@ -136,11 +136,18 @@ class MainActivity : AppCompatActivity() {
         binding.btnDot.setOnClickListener {
             if(binding.txtOperation.isVisible)
             {
-                binding.txtInput2.text=binding.txtInput2.text.toString()+"."
+                if(!binding.txtInput2.text.contains("."))
+                {
+                    binding.txtInput2.text=binding.txtInput2.text.toString()+"."
+
+                }
             }
             else
             {
-                binding.txtInput.text=binding.txtInput.text.toString()+"."
+                if(!binding.txtInput.text.contains("."))
+                {
+                    binding.txtInput.text=binding.txtInput.text.toString()+"."
+                }
             }
         }
 
