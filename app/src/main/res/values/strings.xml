@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+    <string name="division">\u00F7</string>
+    <string name="multiplication">\u00D7</string>
+</resources>
